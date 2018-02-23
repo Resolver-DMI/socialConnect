@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="socialconnectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Accomodation">
+          <Key>
+            <PropertyRef Name="fID" />
+          </Key>
+          <Property Name="fID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="eID" Type="int" />
+          <Property Name="Name" Type="varchar" MaxLength="20" />
+          <Property Name="addr" Type="varchar" MaxLength="100" />
+          <Property Name="aroom" Type="int" />
+          <Property Name="bud" Type="int" />
+          <Property Name="CNo" Type="varchar" MaxLength="10" />
+          <Property Name="avfrom" Type="varchar" MaxLength="20" />
+          <Property Name="fcatgory" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="AvailableRoute">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EID" Type="int" />
+          <Property Name="Name" Type="varchar" MaxLength="20" />
+          <Property Name="Source" Type="varchar" MaxLength="50" />
+          <Property Name="Des" Type="varchar" MaxLength="50" />
+          <Property Name="Seat" Type="int" />
+          <Property Name="CNo" Type="varchar" MaxLength="10" />
+          <Property Name="rdetail" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityContainer Name="socialconnectModelStoreContainer">
+          <EntitySet Name="Accomodation" EntityType="Self.Accomodation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AvailableRoute" EntityType="Self.AvailableRoute" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="socialconnectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AvailableRoute">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EID" Type="Int32" />
+          <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Source" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Des" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Seat" Type="Int32" />
+          <Property Name="CNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="rdetail" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="socialconnectEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AvailableRoutes" EntityType="Self.AvailableRoute" />
+          <EntitySet Name="Accomodations" EntityType="socialconnectModel.Accomodation" />
+        </EntityContainer>
+        <EntityType Name="Accomodation">
+          <Key>
+            <PropertyRef Name="fID" />
+          </Key>
+          <Property Name="fID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="eID" Type="Int32" />
+          <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="addr" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="aroom" Type="Int32" />
+          <Property Name="bud" Type="Int32" />
+          <Property Name="CNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="avfrom" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="fcatgory" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="socialconnectModelStoreContainer" CdmEntityContainer="socialconnectEntities1">
+          <EntitySetMapping Name="AvailableRoutes">
+            <EntityTypeMapping TypeName="socialconnectModel.AvailableRoute">
+              <MappingFragment StoreEntitySet="AvailableRoute">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="EID" ColumnName="EID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Source" ColumnName="Source" />
+                <ScalarProperty Name="Des" ColumnName="Des" />
+                <ScalarProperty Name="Seat" ColumnName="Seat" />
+                <ScalarProperty Name="CNo" ColumnName="CNo" />
+                <ScalarProperty Name="rdetail" ColumnName="rdetail" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Accomodations">
+            <EntityTypeMapping TypeName="socialconnectModel.Accomodation">
+              <MappingFragment StoreEntitySet="Accomodation">
+                <ScalarProperty Name="fcatgory" ColumnName="fcatgory" />
+                <ScalarProperty Name="avfrom" ColumnName="avfrom" />
+                <ScalarProperty Name="CNo" ColumnName="CNo" />
+                <ScalarProperty Name="bud" ColumnName="bud" />
+                <ScalarProperty Name="aroom" ColumnName="aroom" />
+                <ScalarProperty Name="addr" ColumnName="addr" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="eID" ColumnName="eID" />
+                <ScalarProperty Name="fID" ColumnName="fID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

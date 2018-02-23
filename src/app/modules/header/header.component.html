@@ -1,0 +1,12 @@
+<div class="navbar">
+	<div class="navbar-inner">
+		<img src="assets/img/hcp-logo.png"  class="logo" alt="HCP Logo">
+		<ul class="nav navbar-nav navbar-right profile-right" *ngIf="isdashboard">
+			<li>
+				<img src="assets/img/ic-hcp-user.png" class="profilePic" alt="Profile Picture">
+			</li>
+			<li class="doc-name"> Welcome, Mr Raj Saikia</li>
+			<li (click)="logOut()"><a href="javascript:void(0)" class="logout"> <b>Logout</b></a></li>
+		</ul>
+	</div>
+</div>

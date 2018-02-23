@@ -1,0 +1,35 @@
+.chartTiles{
+    height: 150px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border: solid 1px #e6e6e6;
+    padding: 13px 17px;
+    text-align: center;
+    h3{
+        font-size: 16px;
+        font-family: HelveticaNeueLight;
+        display: inline-block;
+        width: 100%;
+        background: #4fa0da;
+        padding: 10px;
+        color:#fff;
+    }
+    h3:nth-child(2){
+        float:right;
+    }
+    ul{
+        list-style-type: none;
+        padding-left: 0px;
+        bottom: 0px;
+        li{
+            font-family: HelveticaNeueLight;
+            font-size: 14px;
+            letter-spacing: 0.51px;
+            div{
+                width:11px; 
+                height:11px; 
+                display: inline-block;
+            }
+        }
+    }
+}

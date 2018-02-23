@@ -1,0 +1,113 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/primeng/resources/themes/omega/theme.css';
+@import '../node_modules/primeng/resources/primeng.min.css';
+body {
+    background-color: #143349 !important;
+    .container-fluid {
+      background: white;
+      margin-left: 50px;
+      margin-right: 50px;
+      padding: 0;
+    }
+  }
+  
+  .posRelative {
+    position: relative;
+  }
+  
+  .navbar-header {
+    .breadcrumb {
+      padding: 0;
+      margin: 0;
+    }
+    padding-left: 10px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .spinner {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+  
+  .ngx-pagination .current {
+    background: #122a51;
+  }
+  
+  .spinnerCircle {
+    /*Code from previous step*/
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    border: 2px solid #122a51;
+    border-top: 4px solid white;
+    border-radius: 50%;
+    /*Added Code from here down*/
+    /*Animation code for older Chrome, Safari, Opera*/
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: .4s;
+    -webkit-animation-name: rotate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    /*Animation code for older Firefox*/
+    -moz-transition-property: -moz-transform;
+    -moz-animation-name: rotate;
+    -moz-animation-duration: .4s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    /*Default animation code*/
+    transition-property: transform;
+    animation-name: rotate;
+    /*Call to @keyframe rule*/
+    animation-duration: .4s;
+    /*Change to speed up or slow down the animation*/
+    animation-iteration-count: infinite;
+    /*Make the animation go forever*/
+    animation-timing-function: linear;
+  }
+  
+  /*keyframes rule for older Chrome, Safari, Opera*/
+  @-webkit-keyframes rotate {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+  
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  
+  /*keyframes rule for older Firefox version*/
+  @-moz-keyframes rotate {
+    from {
+      -moz-transform: rotate(0deg);
+    }
+  
+    to {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  
+  
+  /*Default @keyframes rule*/
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }

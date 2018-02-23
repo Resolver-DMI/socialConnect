@@ -1,0 +1,18 @@
+{
+    "tAsthmaP" : 30,
+    "tAnaphylaxisP" : 40,
+    "tNasthmaP":[
+        { "id" : 54, "name" : "Jack Thompson", "rDoses" : 3 },
+        { "id" : 55, "name" : "Susan S Sherman", "rDoses" : 4 },
+        { "id" : 54, "name" : "Natalie Portman", "rDoses" : 3 },
+        { "id" : 54, "name" : "Jason Puzo", "rDoses" : 5 },
+        { "id" : 54, "name" : "John Ferguson", "rDoses" : 2 }
+    ],
+    "tNanaphylaxisP":[
+        { "id" : 54, "name" : "James Harrold", "aCount" : 5 },
+        { "id" : 54, "name" : "Rachel Campbell", "aCount" : 2 },
+        { "id" : 54, "name" : "Rebbeca Stintson", "aCount" : 3 },
+        { "id" : 54, "name" : "Alexander Holmes", "aCount" : 4 },
+        { "id" : 54, "name" : "Adrian Grant", "aCount" : 2 }
+    ]
+}

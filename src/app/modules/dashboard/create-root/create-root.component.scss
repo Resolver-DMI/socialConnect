@@ -1,0 +1,103 @@
+.patientDTiles{
+    height: 290px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border: solid 1px #979797;
+    padding-top: 15px;
+    margin-right: 7px;
+    img{
+        width: 160px;
+        height: 160px;
+    }
+    h2{
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 25px;
+        color:#000000;
+    }
+    h4{
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 10px;
+        color:#000000;
+    }
+    table{
+        width: 100%;
+        line-height: 25px;
+        tr{
+            td{
+                font-size: 12px;
+                div{
+                    max-height: 45px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+            td:first-child{
+                font-weight: bold;
+                line-height: 20px;
+            }
+            td:nth-child(2){
+                width: 55%;
+            }
+        }
+    }
+    button{
+        width: 130px;
+        height: 30px;
+        background-color: #e53d5d;
+        margin-top: 28px;
+        font-size: 14px;
+        color:#ffffff;
+        border: 0px;
+    }
+}
+.graphDTiles{
+    height: 290px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border: solid 1px #979797;
+    padding: 15px 13px;
+    p{
+        font-size: 12px;
+        display: inline-block;
+    }
+    select{
+        font-size: 12px;
+        float: right;
+    }
+    .chart-container{
+        height: 218px!important;
+    }
+    ul{
+        float: right;
+        li{
+            display: inline-block;
+        }
+        li:first-child{
+            margin-right: 24px;
+        }
+    }
+}
+.oButton{
+    background: none;
+    border: none;
+    color:#1194d6;
+    text-decoration: none;
+    font-family: HelveticaNeueLight;
+    font-size: 12px;
+  }
+.oTooltip{
+    div{
+        max-width: 150px;
+        padding: 10px 7px;
+        border-bottom: 1px solid #979797;
+        word-break: break-all;
+    }
+    div:last-child{
+        border-bottom: none;
+    }
+}
+
+.centerText{
+    text-align: center;
+}
+

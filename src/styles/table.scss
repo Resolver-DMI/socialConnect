@@ -1,0 +1,213 @@
+
+.table.table-user-information{
+        td:nth-child(2) {
+        width: 66%;
+        padding-left: 26px !important;
+        }
+}
+.tablePanelHeader{
+    padding:10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    padding-left: 21px;
+    background-color: #143349;
+    border: solid 1px #143349;
+    color: #ffffff;
+    .fa-search {
+        position: relative;
+        right: 25px;
+    }
+    
+    span {
+            font-family: HelveticaNeueLight;
+            font-size: 16px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 0.51px;
+
+        }
+    .search {
+        width: 276px;
+        outline: none;
+        background: none;
+        border:none;
+        border-bottom: solid 1px rgba(255,255,255,0.5);
+    }    
+}
+
+.tablePanel{
+ .ui-datatable  {
+    th.ui-sortable-column:not(.ui-state-active):hover{
+        background: none;
+    }
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    .ui-column-filter{
+        position: absolute;
+        width: 276px;
+        outline: none;
+        background: none;
+        border: none;
+        box-shadow: none;
+        color: white;
+        border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+        right: 30px;
+        top: -42px;
+      }
+
+      .ui-paginator {
+      
+        .ui-paginator-page.ui-state-active{
+            height: 21px;
+            background-color: #30a2dc;
+            border-radius: 0;
+            color:#fff;
+            border:none;
+        }
+        .ui-corner-all{
+            border-radius: 0;
+            border:none;
+        }
+        .fa{
+            &:before{
+                color: #30a2dc;
+                border: none;
+            }
+        }
+
+        .ui-paginator-page{
+            border: none;
+        }
+    }    
+    .ui-widget-content {
+        border:none;
+    }
+    .ui-paginator-bottom {
+        text-align: right;
+        background: #fff;
+        margin-top:20px;
+        display: inline-block;
+        float: right;
+        border: solid 1px #979797;
+        &:after{
+            display: block;
+            height: 0;
+            clear: both;
+            content: "";
+        }
+  
+    }
+    thead{
+        tr {
+            border: solid 1px #f3f3f3;
+            @extend .tableCellStyle;
+            th {
+                background: #fff;
+                .fa{
+                    &:before{
+                        color: #30a2dc;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+    tbody {
+         tr.ui-widget-content.ui-datatable-odd{
+            background: #fff;
+            
+        }
+        tr.ui-widget-content.ui-datatable-odd.ui-state-highlight{
+            background-color: #ffffff;
+            border: none;
+        }
+    }
+
+    th.ui-state-default{
+        height: 43px;
+        background: #fff;
+        padding-left: 30px;
+        text-align: left;
+        border-style: none;
+        color: black;
+        border: none;
+        font-weight: bold;
+        font-family: HelveticaNeueLight;
+    }
+    th.ui-state-active{
+        color:black;
+    }
+    tr.ui-widget-content{
+
+        border: solid 1px #f3f3f3;
+        background: #ffffff;
+        height: 43px;
+        td{
+            color: #6f6f6f;
+            padding-left: 30px;
+            text-align: left;
+            border-style:none;
+            font-family: HelveticaNeueLight;
+            font-size: 12px;
+        }
+        td.dose, td.patientId, td.comments{
+            display: block;
+            text-align: center;
+            line-height: 35px;
+        }
+        td.dose{
+            width: 55%;
+        }
+        td.patientId{
+            width:43%;
+        }
+      
+        td.comments{
+            width: 75%;
+        }
+
+        &:nth-last-child(1){
+            border-bottom: solid 1px #f3f3f3;
+        }
+
+    }
+
+ }
+ &:after{
+    content:"";
+    display: block;
+    height: 1px;
+    clear: both;
+    visibility: hidden;
+ }
+}
+.tableCellStyle{
+    height: 43px;
+    border: solid 1px #f3f3f3;
+    background: #fff;
+}
+.ui-datatable .ui-datatable-data tr.ui-state-highlight.ui-selected {
+    background: white;
+}
+.ui-overlaypanel-close{
+    border-radius: 0px;
+    border:0px;
+    top: .1em;
+    right: .1em;
+    color:#1194d6 !important;
+    font-size: 12px;
+    background: none;
+    font-family: HelveticaNeueLight;
+}
+.anaphylaxisTable .tablePanel .ui-datatable{
+    th:nth-child(6).ui-state-default, th:nth-child(7).ui-state-default, th:nth-child(8).ui-state-default{
+        text-align: center;
+    }
+}
+.anaphylaxisList .ui-datatable th:nth-child(4).ui-state-active{
+        text-align: center;
+    
+}
+.anaphylaxisList .ui-datatable th:nth-child(7).ui-state-default{
+    width: 290px;
+}

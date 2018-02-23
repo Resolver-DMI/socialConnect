@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="socialconnectModelStoreContainer" CdmEntityContainer="socialconnectEntities1">
+    <EntitySetMapping Name="AvailableRoutes">
+      <EntityTypeMapping TypeName="socialconnectModel.AvailableRoute">
+        <MappingFragment StoreEntitySet="AvailableRoute">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EID" ColumnName="EID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="Des" ColumnName="Des" />
+          <ScalarProperty Name="Seat" ColumnName="Seat" />
+          <ScalarProperty Name="CNo" ColumnName="CNo" />
+          <ScalarProperty Name="rdetail" ColumnName="rdetail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Accomodations">
+      <EntityTypeMapping TypeName="socialconnectModel.Accomodation">
+        <MappingFragment StoreEntitySet="Accomodation">
+          <ScalarProperty Name="fcatgory" ColumnName="fcatgory" />
+          <ScalarProperty Name="avfrom" ColumnName="avfrom" />
+          <ScalarProperty Name="CNo" ColumnName="CNo" />
+          <ScalarProperty Name="bud" ColumnName="bud" />
+          <ScalarProperty Name="aroom" ColumnName="aroom" />
+          <ScalarProperty Name="addr" ColumnName="addr" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="eID" ColumnName="eID" />
+          <ScalarProperty Name="fID" ColumnName="fID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

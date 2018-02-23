@@ -1,0 +1,15 @@
+<div class="tablePanel coloumSpace anaphylaxisList">
+  <div class="tablePanelHeader"> <span>Destination List</span></div>
+  <p-dataTable sortField="eventCount" sortOrder="-1"  selectionMode="single"  [value]="data" [rows]="6" [paginator]="true">
+  
+      <p-column field="EID"  header="Employee ID"></p-column>
+      <p-column field="Name"  header="Name"></p-column>
+      <p-column field="CNo"  header="Contact No"></p-column>
+      <p-column field="Seat"  header="Available seat"></p-column>
+      <p-column field="Source"  header="Source"></p-column>
+      <p-column field="Des"  header="Destination"></p-column>
+      <p-column field="rdetail"  header="Rout Details"></p-column>      
+  </p-dataTable>
+  <p-growl [value]="msgs" sticky="sticky" [life]="10000"></p-growl>
+</div>
+

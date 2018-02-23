@@ -1,0 +1,28 @@
+<div class="row">
+	<app-header></app-header>
+</div>
+<div class="row">
+	<div class="col-md-3  col-sm-4  col-lg-3  hcpLogin">
+		<img src="../../../assets/img/ic-hcp-user.png" alt="user image">
+		<h4>Social Connect LOGIN</h4>
+		<form (submit)="loginUser($event)">
+			<div class="form-group">
+					<label for="username">Username</label>
+					<input type="text" class="form-control" value="330335" id="username">
+					<!-- <p>*Please Enter your Username</p> -->
+			</div>
+			<div class="form-group">
+					<label for="pwd">Password</label>
+					<input type="password" value="330335" class="form-control" id="pwd">
+					<!-- <p>*Please Enter your Password</p> -->
+			</div>
+			<div class="checkbox">
+					<label class="remCheck"><input type="checkbox"> Remember me</label>
+			</div>
+			<input type="submit" value="Log In" class="submitBtm">
+			<div class="linkWrapper">
+				<!-- <a href="javascript:void(0)">Register</a> | <a href="javascript:void(0)">Forgot your password?</a> -->
+			</div>
+			</form>
+	</div>
+</div>

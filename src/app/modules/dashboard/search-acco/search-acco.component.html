@@ -1,0 +1,15 @@
+<div class="tablePanel coloumSpace searchacco">
+  <div class="tablePanelHeader"> <span>Destination List</span></div>
+  <p-dataTable sortField="eventCount" sortOrder="-1"  selectionMode="single"  [value]="data" [rows]="6" [paginator]="true">
+  
+      
+      <p-column field="Name"  header="Name"></p-column>
+      <p-column field="CNo"  header="Contact No"></p-column>
+      <p-column field="addr"  header="Address"></p-column>
+      <p-column field="aroom"  header="Available room"></p-column>
+      <p-column field="bud"  header="Budgate"></p-column>
+      <p-column field="avfrom"  header="Available From"></p-column>
+      <p-column field="fcatgory"  header="Flate Catgory"></p-column>      
+  </p-dataTable>
+  <p-growl [value]="msgs" sticky="sticky" [life]="10000"></p-growl>
+</div>

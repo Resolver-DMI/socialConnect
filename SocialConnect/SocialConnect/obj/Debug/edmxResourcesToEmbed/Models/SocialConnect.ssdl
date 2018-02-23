@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="socialconnectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Accomodation">
+    <Key>
+      <PropertyRef Name="fID" />
+    </Key>
+    <Property Name="fID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="eID" Type="int" />
+    <Property Name="Name" Type="varchar" MaxLength="20" />
+    <Property Name="addr" Type="varchar" MaxLength="100" />
+    <Property Name="aroom" Type="int" />
+    <Property Name="bud" Type="int" />
+    <Property Name="CNo" Type="varchar" MaxLength="10" />
+    <Property Name="avfrom" Type="varchar" MaxLength="20" />
+    <Property Name="fcatgory" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="AvailableRoute">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EID" Type="int" />
+    <Property Name="Name" Type="varchar" MaxLength="20" />
+    <Property Name="Source" Type="varchar" MaxLength="50" />
+    <Property Name="Des" Type="varchar" MaxLength="50" />
+    <Property Name="Seat" Type="int" />
+    <Property Name="CNo" Type="varchar" MaxLength="10" />
+    <Property Name="rdetail" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityContainer Name="socialconnectModelStoreContainer">
+    <EntitySet Name="Accomodation" EntityType="Self.Accomodation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AvailableRoute" EntityType="Self.AvailableRoute" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

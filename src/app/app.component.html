@@ -1,0 +1,7 @@
+<div class="container-fluid">
+	<p-growl life="50000" [value]="errMessages" [sticky]='false' ></p-growl>
+	<div class="spinner"  [hidden]="!loading">
+		<div class="spinnerCircle" ></div>
+	</div>
+	<router-outlet></router-outlet>
+</div>
